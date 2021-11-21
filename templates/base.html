@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+    <link rel="stylesheet" href="//code.jquery.com/jquery-1.11.1.min.js">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<header class="mb-auto">
+    <div>
+      <nav class="nav nav-masthead justify-content-center float-md-end bg-dark">
+          <img alt="Flask: web development, one drop at a time" class="align-center"
+               src="https://bloggedin.co.uk/wp-content/uploads/2020/05/flask-logo.png">
+          <h3 class="float-md-start mb-0 text-muted">FLASK</h3>
+          <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+          <a class="nav-link text-white" href="/posts">Posts</a>
+          <a class="nav-link text-white" href="/about">About</a>
+          <a class="nav-link active text-white" aria-current="page" href="/contacts">Contacts</a>
+          <a class="nav-link active text-white" aria-current="page" href="/create-article">Add article</a>
+          <a  type="button"  class="btn btn-outline-info" aria-current="page" href="/register">Register</a>
+          <a type="button"  class="btn btn-outline-success" aria-current="page" href="/login">Login</a>
+
+
+
+
+          <script language="JavaScript">
+var bigsize = "300";
+var smallsize = "150";
+function changeSizeImage(im) {
+  if(im.height == bigsize) im.height = smallsize;
+  else im.height = bigsize;
+}
+          </script>
+          <table align="center">
+  <tr>
+    <td align="center">
+      <img src="static/cert.png"   height="100" onclick="changeSizeImage(this)" />
+      <br />
+    </td>
+  </tr>
+          </table>
+      </nav>
+    </div>
+</header>
+
+{% block body %}{% endblock body %}
+
+</body>
+
+<footer class="container mt-auto text-black-50">
+    <p>FLASK Page <a href="https://palletsprojects.com/p/flask/" class="text-black">Home</a>
+    <a href="https://flask.palletsprojects.com/en/1.1.x/" class="text-black">Documentation</a>
+        <a href="https://www.python.org/" class="text-black">Python</a>
+
+
+    <div class="text-center p-1" style="background-color:rgb(222, 238, 221)">
+    © 2021 Python, FLASK, Bootstrap, Font Awesome
+  </div>
+    <div class="container d-flex justify-content-center mt-100 mb-50">
+    <h3>Я в соцсетях</h3>
+    <div class="col-md-6">
+        <div class="row row-tile no-gutters">
+            <div class="col-6"> <button type="button" class="btn btn-light btn-block btn-float m-0"> <a href="https://www.instagram.com/serjpeterson/"><i class="fab fa-instagram-square"></i></i> <span>Instagram</span> </a></button> <button type="button" class="btn btn-light btn-block btn-float m-0"> <a href="https://www.facebook.com/serj.petersson"><i class="fab fa-facebook-square"></i><span>Facebook</span> </button> </a><button type="button" class="btn btn-light btn-block btn-float m-0"> <a href="https://github.com/SerjPetersson/SerjPetersson"><i class="fab fa-github"></i></i> <span>GitHub</span> </a></button>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+</html>

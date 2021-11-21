@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+Posts
+{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="h-100 p-5 text-muted bg-light rounded-3">
+          <h1>Посты</h1>
+    {% if articles|length > 0 %}
+        {% for el in articles %}
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.intro }}</p>
+            <p><b>Дата: {{ el.date.date() }}</b>
+                <a href="/posts/{{ el.id }}" class="btn btn-outline-light" type="button">Подробнее</a>
+        {% endfor %}
+    {% else %}
+    <p>У нас пока ещё нет постов</p>
+    {% endif %}
+    </div>
+</div>
+{% endblock body %}

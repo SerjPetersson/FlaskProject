@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}
+FLASK Page
+{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Этот сайт был создан при помощи</h1>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal">Bootstrap</h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">Версия <small class="text-muted fw-light"> 5.0\3.3</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+            <img alt="" class="align-center" width="80" height="80" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-social-logo.png">
+
+              <li>Font Awesome 5.15</li>
+            </ul>
+            <a href="https://getbootstrap.com/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">На сайт Bootstrap</button></a>
+            <a href="https://fontawesome.com/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">На сайт Font Awesome</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm bg-dark">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal text-white">FLASK</h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title text-white">Версия <small class="text-muted fw-light ">1.1.2</small></h3>
+            <ul class="list-unstyled mt-3 mb-4 text-white">
+              <img alt="" class="align-center" width="140" height="80" src="https://bloggedin.co.uk/wp-content/uploads/2020/05/flask-logo.png">
+              <li>SQLAlchemy 1.4</li>
+            </ul>
+            <a href="https://palletsprojects.com/p/flask/"><button type="button" class="w-100 btn btn-lg btn-primary">На сайт FLASK</button></a>
+
+            <a href="https://www.sqlalchemy.org/"><button type="button" class="w-100 btn btn-lg btn-secondary">На сайт SQLAlchemy</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-dark bg-warning">
+          <div class="card-header py-3 text-white border-dark">
+            <h2 class="my-0 fw-light">Python</h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">Версия <small class="text-muted fw-light">3.7</small></h3>
+            <ul class="list-unstyled mt-3 mb-4 text-dark">
+              <img alt="" class="align-center" width="80" height="80" src="https://www.python.org/static/opengraph-icon-200x200.png">
+              <li>Heroku</li>
+            </ul>
+            <a href="https://www.python.org/"><button type="button" class="w-100 btn btn-lg btn-warninig">На сайт Python</button></a>
+            <a href="https://www.heroku.com/"><button type="button" class="w-100 btn btn-lg btn-info">На сайт Heroku</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+{% endblock body %}
